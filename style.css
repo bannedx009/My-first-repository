@@ -1,0 +1,365 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar{
+    display: flex;
+    background-color: rgb(0, 114, 163);
+    padding: 5px 20px;
+    list-style-type: none;
+}
+.navmenu{
+    display: flex;
+    margin-left: 120vh;
+    margin-top: 25px;
+}
+li{
+    margin-left: 5vh;
+    padding: 1vh 10px;
+    height: max-content;
+    border-radius: 10px;
+    cursor: pointer;
+    color: aquamarine;
+}
+li:hover{
+    background-color: blue;
+}
+li:active{
+    background-color: rgb(98, 98, 255);
+}
+.h1{
+    font-family: cursive;
+    color: goldenrod;
+}
+#phonenav,.hiddenbtn{
+    display: none;
+}
+.nhr{
+    width: 6vh;
+    border: 1px solid white;
+}
+#phonenav{
+    font-size: 200%;
+    list-style-type: none;
+    background-color: rgba(173, 173, 173, 0.644);
+    width: 100vh;
+    padding: 10vh;
+    height: 300%;
+}
+.phh1{
+    margin-top: 5vh;
+    margin-left: 6vh;
+    font-family: cursive;
+    color: goldenrod;
+}
+.phbtn{
+    font-size: 13vh;
+    background-color: transparent;
+    border: 0cap;
+    color: white;
+}
+/* MAIN1 */
+#MAIN1{
+    background-image: url(background.jpg);
+    padding: 32vh 60vh;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+}
+/* MAIN2 */
+#M2main{
+    display: flex;
+}
+.m2h1{
+    padding: 5vh 10vh;
+    background-color: rgba(220, 220, 220, 0.194);
+}
+.cards{
+    width: 40vh;
+    border: 2px solid rgb(92, 92, 255);
+    margin: 5vh;
+    border-radius: 20px;
+    background-color:  rgba(149, 149, 149, 0.164);
+    box-shadow: 5px 4px rgba(95, 95, 95, 0.315);
+}
+.imgname,.imgtxt{
+    font-size: 5vh;
+    margin: 2vh 5vh;
+    font-weight: 400;
+}
+.imgtxt{
+    font-size: 3vh;
+}
+.imgname::selection,.imgtxt::selection{
+    background-color: transparent;
+}
+.cimg{
+    width: 40vh;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+hr{
+    margin-top: 0px;
+}
+/* MAIN3 */
+#MAIN3{
+    display: none;
+}
+#M3main{
+    display: flex;
+}
+#m3nav{
+    display: flex;
+    padding: 2vh 5vh;
+    background-color: rgba(220, 220, 220, 0.194);
+}
+input{
+    height: max-content;
+    margin-top: 25px;
+    margin-left: 90vh;
+    padding: 2vh;
+    border-radius: 10px;
+    border-color: rgb(220, 220, 220);
+    border: 0px;
+    border-bottom: 1px solid rgb(148, 148, 148);
+    border-top: 1px solid rgb(77, 77, 77);
+    background-color: rgba(128, 251, 255, 0.65);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.m3cards{
+    width: 40vh;
+    border: 2px solid rgb(92, 92, 255);
+    margin: 5vh;
+    border-radius: 20px;
+    background-color:  rgba(149, 149, 149, 0.164);
+    box-shadow: 5px 4px rgba(95, 95, 95, 0.315);
+}
+#phonenav{
+    position: absolute;
+    color: white;
+}
+.cardp{
+    padding: 0vh 5vh;
+    font-size: 2vh;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+    font-family: monospace;
+}
+.m3cards:active,.cards:active{
+    box-shadow: none;
+}
+
+
+
+
+
+@media (min-width: 600px) and (max-width:1300px) {
+    body{
+        width: 198vh;
+    }
+    #navbar{
+        display: none;
+    }
+    .hiddenbtn{
+        display: block;
+        position: absolute;
+        margin: 2vh;
+        background-color: transparent;
+        border: 0cap;
+    }
+    /* MAIN1 */
+    #MAIN1{
+        padding: 30vh 40vh;
+        width: 118vh;
+    }
+    /* MAIN2 */
+    #MAIN2{
+        font-size: 100%;
+    }
+    .cards{
+        margin: 4.5vh;
+    }
+    #M2main{
+        display: flex;
+        margin-left: 0vh;
+    }
+    .nhr{
+        width: 6vh;
+        margin-top: 2vh;
+        border-color: rgb(131, 131, 131);
+    }
+    /* MAIN3 */
+    #M3main{
+        display: flex;
+    }
+    .m3cards{
+        margin: 4vh;
+    }
+    #m3nav{
+        margin-top: 13vh;
+    }
+    input{
+        margin-top: 5vh;
+        margin-left: 50vh;
+    }
+}
+@media (min-width: 300px) and (max-width:600px) {
+    body{
+        width: 130vh;
+    }
+    #navbar{
+        display: none;
+    }
+    .hiddenbtn{
+        display: block;
+        position: absolute;
+        margin: 2vh;
+        background-color: transparent;
+        border: 0cap;
+    }
+    /* MAIN1 */
+    #MAIN1{
+        padding: 30vh 30vh;
+    }
+    /* MAIN2 */
+    #MAIN2{
+        font-size: 100%;
+    }
+    .cimg{
+        width: 48.6vh;
+        height: 35vh;
+    }
+    .imgname{
+        font-size: 7vh;
+    }
+    .imgtxt{
+        font-size: 5vh;
+    }
+    .cards{
+        display: inline-table;
+        width: 48.5vh;
+        height: 70vh;
+    }
+    #M2main{
+        margin: 5vh;
+        display: block;
+    }
+    .nhr{
+        width: 6vh;
+        margin-top: 2vh;
+        border-color: rgb(131, 131, 131);
+    }
+    /* MAIN3 */
+
+    #M3main{
+        display: inline-table;
+    }
+    .m3h1{
+        width: 110vh;
+        margin-bottom: 1vh;
+    }
+    .m3cards{
+        margin: 7.5vh;
+        width: 48.5vh;
+    }
+    #m3nav{
+        margin-top: 13vh;
+        display: block;
+        font-size: 4vh;
+    }
+
+    input{
+        margin-top: 2vh;
+        margin-left: 0vh;
+        width: 80%;
+        font-size: 3vh;
+    }
+}
+@media screen and (max-width: 300px) {
+    body{
+        width: 130vh;
+    }
+    #navbar{
+        display: none;
+    }
+    .hiddenbtn{
+        display: block;
+        position: absolute;
+        margin: 2vh;
+        background-color: transparent;
+        border: 0cap;
+    }
+    #phonenav {
+        font-size: 35   0%;
+        height: 400%;
+        padding-right: 0vh;
+    }
+    .nhr{
+        width: 7vh;
+        margin-top: 2.5vh;
+        border-color: rgb(131, 131, 131);
+    }
+    /* MAIN1 */
+    #MAIN1{
+        padding: 30vh 30vh;
+        font-size: 5vh;
+    }
+    /* MAIN2 */
+    #MAIN2{
+        font-size: 5vh;
+    }
+    .cimg{
+        width: 100vh;
+        height: 80vh;
+    }
+    .cards{
+        display: block;
+        width: 100vh;
+        height: 160vh;
+        margin: 14vh;
+    }
+    .imgname{
+        font-size: 13vh;
+    }
+    .imgtxt{
+        font-size: 10vh;
+    }
+    .cardp{
+        font-size: 7vh;
+        font-family: monospace;
+    }
+    #M2main{
+        display: block;
+    }
+    /* MAIN3 */
+
+    #M3main{
+        display: block;
+    }
+    .m3h1{
+        width: 100vh;
+        margin-bottom: 1vh;
+    }
+    .m3cards{
+        display: block;
+        width: 100vh;
+        height: 160vh;
+        margin: 14vh;
+    }
+    #m3nav{
+        margin-top: 13vh;
+        display: block;
+        font-size: 5vh;
+    }
+
+    input{
+        margin-top: 2vh;
+        margin-left: 0vh;
+        padding: 3vh;
+        width: 100vh;
+        font-size: 5vh;
+    }
+    
+}
